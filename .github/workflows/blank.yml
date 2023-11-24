@@ -4,7 +4,7 @@ on:
   push:
     branches: ["main"]
 
-jbos:
+jobs:
   build:
     runs-on: ubunutu-latest
     
