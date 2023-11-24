@@ -1,0 +1,15 @@
+name: personal homepage
+
+on:
+  push:
+    branches: ["main"]
+
+jbos:
+  build:
+    runs-on: ubunutu-latest
+    
+    steps:
+      - uses: actions/checkout@v3
+      - name : Run personal homepage
+        run : |
+          google-chrome index.html
